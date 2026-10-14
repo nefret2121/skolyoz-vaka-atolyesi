@@ -2,7 +2,9 @@
 
 ## Hocanın incelemesi için
 
-Çalışan demo: https://skolyoz-vaka-atolyesi.vast-shark-4901.chatgpt.site
+GitHub Pages hedef adresi: https://nefret2121.github.io/skolyoz-vaka-atolyesi/
+
+Yayın için depo Settings → Pages → Deploy from a branch → main → /docs → Save seçilir. Pages ayarı tamamlanmadan bu adresin açılması beklenmez.
 
 Bu bağlantı şifresiz inceleme demosudur. GitHub deposu kaynak kodunu saklar; tek başına web sitesi yayını değildir.
 
@@ -103,3 +105,7 @@ Uygulama referansları: https://nodejs.org/api/crypto.html ve https://nodejs.org
 
 ## Görsel tasarım
 Açık turkuaz/lila arka plan, buzlu beyaz cam kartlar, yuvarlak Nunito başlıklar ve Plus Jakarta Sans metinler. `public/assets/design.css` tema değişkenlerini içerir. Dekoratif küre ve küpler SVG arka planıdır; tıbbi görüntülerin üzerine uygulanmaz. Fontlar yerel WOFF dosyalarıyla sağlanır; OFL lisansları `public/ui/` içindedir. Giriş ekranı aynı tasarımdadır. Yalnız `ui/login.css`, Nunito ve Plus Jakarta Sans fontları giriş öncesi açıktır; ders CSS dosyası, JSON, görüntüler ve PDF oturum korumasındadır.
+
+## GitHub Pages inceleme demosu
+
+`docs/` klasörü şifresiz statik eğitim demosudur. Node sunucusunu ve kamp şifre kontrolünü çalıştırmaz. Canlı sitede şifreli kullanım için kökteki entegrasyon servisi kurulmalıdır.
