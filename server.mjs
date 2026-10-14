@@ -77,7 +77,8 @@ export async function createApp(config){
    const relative=path.slice(config.base.length+1);
    if(relative.includes('\\')||relative.includes('\0')||relative.split('/').some(s=>!s||s.startsWith('.')))return respond(res,404,'Bulunamadı.');
    let file,details;try{file=await realpath(resolve(root,relative));if(!file.startsWith(root+sep))return respond(res,404,'Bulunamadı.');details=await stat(file);if(!details.isFile())return respond(res,404,'Bulunamadı.')}catch{return respond(res,404,'Bulunamadı.')}
-   const types={'.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.pdf':'application/pdf','.css':'text/css','.js':'text/javascript','.woff':'font/woff','.mp4':'video/mp4','.svg':'image/svg+xml'};
+   if(extname(file)==='.html'){const html=(await readFile(file,'utf8')).replace('</header>',logout+'</header>');return respond(res,200,req.method==='HEAD'?'':html);}
+   const types={'.html':'text/html; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.pdf':'application/pdf','.css':'text/css','.js':'text/javascript','.woff':'font/woff','.mp4':'video/mp4','.svg':'image/svg+xml'};
    const type=types[extname(file)]||'application/octet-stream';let start=0,end=details.size-1,status=200;
    const range=req.headers.range;
    if(range){const m=/^bytes=(\d*)-(\d*)$/.exec(range);if(!m||(!m[1]&&!m[2]))return respond(res,416,'','text/plain',{'Content-Range':`bytes */${details.size}`});

@@ -20,7 +20,7 @@ Bu paket, mevcut siteden bağımsız çalışabilen bir Node.js servisi ve tamam
 
 ## İçerik
 
-Başlangıçta seslendirmeli 13 saniyelik toraks/T7 animasyonu yer alır. Şematik eğitim görselidir; kaynak hastaların görüntüsü değildir. Video kullanıcı tarafından başlatılır.
+Açılış sayfasında anatomi videosu bulunur. “Vakalara geç” bağlantısı `vakalar.html` içindeki soru akışını açar. Video şematik eğitim animasyonudur; kaynak hastaları temsil etmez.
 
 - Üç gerçek kaynak hasta, dört bölüm, 17 karar noktası.
 - İlk iki bölüm aynı hastanın değerlendirmesi ve takibi.
@@ -111,3 +111,4 @@ Açık turkuaz/lila arka plan, buzlu beyaz cam kartlar, yuvarlak Nunito başlık
 ## GitHub Pages inceleme demosu
 
 `docs/` klasörü şifresiz statik eğitim demosudur. Node sunucusunu ve kamp şifre kontrolünü çalıştırmaz. Canlı sitede şifreli kullanım için kökteki entegrasyon servisi kurulmalıdır.
+
