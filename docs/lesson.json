@@ -2,7 +2,7 @@
   "sources": {
     "A": {
       "title": "Schlenzka ve Yrjönen · Hasta A / Şekil 1",
-      "url": "https://journals.sagepub.com/doi/10.1007/s11832-012-0464-5"
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3566257/"
     },
     "B": {
       "title": "Kawasaki ve ark. · Hasta B / Şekil 2",
@@ -38,7 +38,7 @@
     },
     "wean": {
       "title": "Cheung ve ark. · 2024 korse bırakma RCT",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38829664/"
+      "url": "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2819057"
     },
     "surgery": {
       "title": "SRS · Cerrahi değerlendirme",
@@ -46,18 +46,29 @@
     },
     "acr": {
       "title": "ACR · Scoliosis-Child",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31054751/"
+      "url": "https://acsearch.acr.org/docs/3101564/narrative/"
     },
     "sosort": {
       "title": "SOSORT 2016 · Klinik kılavuz",
       "url": "https://doi.org/10.1186/s13013-017-0145-8"
+    },
+    "D": {
+      "title": "Kuroki ve ark. · Hasta D / Şekil 4",
+      "url": "https://link.springer.com/article/10.1186/s13013-015-0036-9/figures/4"
+    },
+    "omc": {
+      "title": "Kuroki ve ark. · OMC korse çalışması ve yöntemleri",
+      "url": "https://link.springer.com/article/10.1186/s13013-015-0036-9"
+    },
+    "E": {
+      "title": "Kawasaki ve ark. · Hasta E / Şekil 3",
+      "url": "https://journals.sagepub.com/doi/10.1177/21925682211032559"
     }
   },
   "sections": [
     {
       "title": "Konservatif karar",
       "patient": "A",
-      "minutes": 20,
       "start": 0,
       "end": 4,
       "goal": "Grafi, matürite ve tedavi kanıtını birleştirmek."
@@ -65,7 +76,6 @@
     {
       "title": "Aynı hastanın takibi",
       "patient": "A",
-      "minutes": 12,
       "start": 5,
       "end": 8,
       "goal": "Anlık korse etkisi, büyüme ve uzun dönem sonucu ayırmak."
@@ -73,7 +83,6 @@
     {
       "title": "İlerleyen büyük eğrilik",
       "patient": "B",
-      "minutes": 13,
       "start": 9,
       "end": 12,
       "goal": "Artışı doğrulamak; neden ve sevk kararını tek sayıya indirgememek."
@@ -81,382 +90,607 @@
     {
       "title": "Atipik bulgulu hasta",
       "patient": "C",
-      "minutes": 10,
       "start": 13,
       "end": 16,
       "goal": "Nörolojik bulgularla idiyopatik varsayımını yeniden değerlendirmek."
+    },
+    {
+      "title": "Ek vaka · Lomber eğrilik",
+      "patient": "D",
+      "start": 17,
+      "end": 20,
+      "goal": "Eğrilik büyüklüğü, esneklik ve kullanım verisini birlikte yorumlamak."
+    },
+    {
+      "title": "Ek vaka · Korse dışı artış",
+      "patient": "E",
+      "start": 21,
+      "end": 24,
+      "goal": "Korse içi düzeltme ile korse dışı izlem sonucunu ayırmak."
     }
   ],
   "patients": {
     "A": {
       "heading": "Hasta A · Başlangıçta 12 yaşında kız",
       "facts": [
-        "Premenarşal",
-        "Risser 0",
-        "Kemik yaşı: 12,5 yıl",
-        "Esnek eğrilik olarak tanımlanmış",
-        "İlk panelde ana eğrilik 30° işaretli"
+        "Başlangıç yaşı: 12; kız hasta",
+        "İlk menstrüasyon henüz gerçekleşmemiş",
+        "Risser 0; kemik yaşı 12,5 yıl",
+        "Ana eğrilik: görüntü etiketi 30°",
+        "Kaynak eğriliği esnek olarak tanımlıyor"
       ],
-      "unknown": "Matürite bilgileri başlangıca aittir; takip evreleri verilmemiştir. Sanders, ATR, nörolojik muayene, kullanım ve PSSE ayrıntıları bu örnekte yoktur. Normal oldukları varsayılmaz.",
+      "unknown": "Bu bilgiler tedavi başlangıcına aittir. Takipteki iskelet olgunluğu, ATR (gövde rotasyon açısı), nörolojik muayene ve günlük korse kullanım süresi bildirilmemiştir.",
       "source": "A",
-      "asset": "hasta-a.jpg",
-      "caption": "Altı gerçek kontrol grafisi; kaynak görüntüdeki işaretler korunmuştur. Görsel düşük çözünürlüklü olduğundan hassas yeniden ölçüm yaptırılmaz. Web sayfasında başlangıçta yalnız A paneli gösterilir.",
+      "asset": "hasta-a-hi.jpg",
+      "caption": "Şekil 1: A başlangıç; B ilk korse içi; C birinci yıl kontrolü; D birinci yılda yeni korse içi; E ikinci yılda korseyi bırakma sürecinin başlangıcı; F bu süreçten bir yıl sonraki kontrol. C panelinin korse içi/dışı çekim koşulu açıklamada belirtilmiyor. Görüntü kırpılmaz. Tam şekil takip sonuçlarını da içerebilir; yakınlaştırma yeni ayrıntı üretmez.",
       "license": "Kaynakta açık erişim; atıf: Schlenzka ve Yrjönen, 2013."
     },
     "B": {
-      "heading": "Hasta B · Korse sırasında artış",
+      "heading": "Hasta B · Korse içi grafilerde eğrilik artışı",
       "facts": [
         "Kaynak ana eğrilik aralığı: T5-T12",
         "Korse öncesi ayakta grafi: 35°"
       ],
-      "unknown": "Şekil açıklamasında hastaya özgü yaş, cinsiyet, Risser, kullanım saati ve son cerrahi sonuç verilmemiştir. Kohort ortalamaları bu hastaya atanmaz.",
+      "unknown": "Şekil açıklamasında bu hastanın yaşı, cinsiyeti, Risser evresi, gerçek kullanım süresi ve nihai tedavisi yok. Çalışmanın grup ortalamaları hastaya ait veri değildir.",
       "source": "B",
       "asset": "hasta-b.jpg",
-      "caption": "Üç gerçek radyografi. Sayısal açılar şekil açıklamasından alınmıştır; tarafımızca yeniden ölçülmemiştir.",
+      "caption": "Şekil 2: A korse öncesi ayakta 35°; B ilk korse içi 29°; C takipte korse içi 44°. Açılar yayın açıklamasındandır; burada yeniden ölçülmedi. Görüntü kırpılmaz. Tam şekil takip sonuçlarını da içerebilir; yakınlaştırma yeni ayrıntı üretmez.",
       "license": "Kawasaki ve ark., Global Spine Journal, 2021/2023 · CC BY-NC-ND 4.0; orijinal dosya değiştirilmedi."
     },
     "C": {
       "heading": "Hasta C · 13 yaşında kız",
       "facts": [
-        "Omurga deformitesi öyküsü: 1 yıl",
-        "Kaynak: 38 kg, 138 cm",
-        "T1-T6: 35°; T7-L3: 100°",
-        "Kaynak Risser ifadesi: 0-I"
+        "13 yaşında kız; deformite öyküsü bir yıl",
+        "T1–T6: 35°; T7–L3: 100°",
+        "Kaynak: sol torakal ve sağ lomber eğrilik",
+        "Kaynak Risser ifadesi: 0–I"
       ],
-      "unknown": "Kaynağın “0-I” ifadesini kesin tek evreye çevirmiyoruz. Menarş, Sanders ve günlük korse kullanımı bu hasta için verilmemiştir.",
+      "unknown": "Risser, kaynakta 0–I aralığında yazılmıştır; tek evreye indirgenemez. Menstrüasyon ve Sanders evresi bildirilmemiştir. Nörolojik muayene bilgisi sonraki soruda verilir.",
       "source": "C",
       "asset": "hasta-c.png",
-      "caption": "Aynı kaynak hastanın radyografi, 3D rekonstrüksiyon, MRG ve tedavi sonrası görüntülerini içeren gerçek şekil. Aşamaya göre ilgili bölge gösterilir.",
+      "caption": "Şekil 3 tümüyle gösterilir: başlangıç radyografileri, 3D rekonstrüksiyon, MRG ve ameliyat sonrası görüntüler birlikte bulunur. Tam şekil, sonraki soruların bazı bulgularını da gösterir. Görüntü kırpılmaz. Tam şekil takip sonuçlarını da içerebilir; yakınlaştırma yeni ayrıntı üretmez.",
       "license": "Xu ve ark., BMC Musculoskeletal Disorders, 2020 · CC BY 4.0; görüntü içeriği değiştirilmedi."
+    },
+    "D": {
+      "heading": "Hasta D · 12 yaş 10 aylık kız, lomber eğrilik",
+      "facts": [
+        "Sola konveks lomber eğrilik: 23°",
+        "Başlangıç grafisinde Risser I etiketi",
+        "Asılarak çekilen grafide (hanging): 18°",
+        "OMC korse içi grafide: 5°"
+      ],
+      "unknown": "Menstrüasyon, Sanders evresi ve önceki seri Cobb ölçümleri bireysel olgu açıklamasında yok. Asılarak çekilen grafi, yan eğilme (bending) veya sırtüstü (supin) grafi değildir.",
+      "source": "D",
+      "asset": "hasta-d.png",
+      "caption": "Kuroki ve ark., Şekil 4: a–b başlangıç; c asılma pozisyonu; d korse içi; e–f son kontrol. Başlangıç Risser I, son görüntü Risser IV olarak etiketlenmiştir. Görüntü kırpılmaz. Tam şekil takip sonuçlarını da içerebilir; yakınlaştırma yeni ayrıntı üretmez.",
+      "license": "Kuroki ve ark., Scoliosis, 2015 · CC BY 4.0; yayımlanmış şekil içeriği korunmuştur."
+    },
+    "E": {
+      "heading": "Hasta E · Korse dışı kontrolde ortaya çıkan artış",
+      "facts": [
+        "Ana eğrilik aralığı: T7–L3",
+        "Korse öncesi ayakta: 35°",
+        "İlk korse içi: 24°"
+      ],
+      "unknown": "Hastaya özgü yaş, cinsiyet, matürite evresi ve kullanım verileri şekil açıklamasında bildirilmemiştir. B hastasından farklı bir kaynak olgudur.",
+      "source": "E",
+      "asset": "hasta-e.jpg",
+      "caption": "Kawasaki ve ark., Şekil 3: A korse öncesi 35°; B ilk korse içi 24°; C bırakma döneminde korse içi 22,6°; D tedavi sonrası ayakta, korse dışında 42,5°. Görüntü kırpılmaz. Tam şekil takip sonuçlarını da içerebilir; yakınlaştırma yeni ayrıntı üretmez.",
+      "license": "Kawasaki ve ark., Global Spine Journal, 2021/2023 · CC BY-NC-ND 4.0; orijinal şekil değiştirilmedi."
     }
   },
   "questions": [
     {
       "section": 0,
-      "title": "İlk grafiden güvenilir bir karşılaştırma nasıl kurarsınız?",
+      "title": "Seri Cobb ölçümlerini karşılaştırmadan önce neyi standardize edersiniz?",
       "info": "Kaynak ilk grafide ana eğriliği 30° işaretliyor. Bu sayı bizim yeniden ölçümümüz değildir.",
       "options": [
-        "Kaynak değerini kaydeder; uç omurları, çekim koşulunu ve ileride karşılaştırılacak eğriliği belirtirim.",
-        "30° sayısını kullanarak sonraki bütün grafilerin aynı koşullarda çekildiğini kabul ederim.",
-        "Yalnız apeks omurunu ölçer, uç omur seçimini kaydetmem."
+        "Aynı eğriliğin uç omurlarını, ayakta çekim koşullarını ve korse durumunu kontrol ederim.",
+        "Yeni grafide daha küçük açı veren uç omurları seçerek yanıtı değerlendiririm.",
+        "Önceki raporun sayısını kullanırım; grafileri birlikte incelemem."
       ],
       "correct": 0,
-      "reason": "Uç omur seçimi ölçüm değişkenliğinin önemli bir kaynağıdır. Kaynak açısı ile kendi ölçümünüz farklı veriler olarak kaydedilmelidir.",
-      "why": "B karşılaştırılabilirliği varsayar; C ölçüm yaklaşımını eksik bırakır.",
+      "reason": "Cobb açısı, üst uç omurun üst son plağı ile alt uç omurun alt son plağı esas alınarak ölçülür. Uç omur seçimi ve çekim koşulları değişirse seri karşılaştırma yanıltıcı olabilir.",
+      "why": "B ölçüm yöntemini sonuca göre değiştirir; C görüntülerin karşılaştırılabilirliğini kontrol etmez.",
       "prompt": "Takipte farklı uç omur seçilmişse önce neyi kontrol edersiniz?",
       "notes": "Katılımcıdan yeni grafi istemeden önce mevcut görüntülerin ve ölçüm seçiminin nasıl inceleneceğini anlatmasını isteyin.",
       "refs": [
         "cobb"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q1"
     },
     {
       "section": 0,
-      "title": "Bu matürite bilgisi hangi yorumu destekler?",
+      "title": "Büyüme potansiyelini nasıl değerlendirirsiniz?",
       "info": "Premenarşal, Risser 0 ve kemik yaşı 12,5 yıl kaynakta bildirilmiş.",
       "options": [
-        "Kesin iki yıl büyüme kaldığını ve Sanders 3 olduğunu söyleyebilirim.",
-        "İskelet olgunluğu tamamlanmamıştır; kalan büyümeyi ek verilerle değerlendiririm.",
-        "Risser 0, eğriliğin kesin ilerleyeceğini kanıtlar."
+        "Risser 0 bilgisinden Sanders evresini ve kalan büyüme süresini hesaplarım.",
+        "Menstrüasyon öyküsü, seri boy ölçümleri ve gerektiğinde ek iskelet olgunluğu göstergelerini birlikte değerlendiririm.",
+        "Kemik yaşı ile takvim yaşı yakınsa büyümenin tamamlandığını kabul ederim."
       ],
       "correct": 1,
-      "reason": "Risser ile Sanders arasında kesin dönüşüm yapılamaz. Matürite göstergeleri değerlendirmeyi destekler; bireysel ilerleme garantisi veya kesin süre vermez.",
-      "why": "A eksik evreyi uydurur; C risk ile kesin sonucu karıştırır.",
+      "reason": "Risser ve Sanders evreleri birbirinin doğrudan karşılığı değildir. Başlangıç bilgileri iskelet olgunluğunun tamamlanmadığını destekler; kalan büyüme miktarı için tek başına yeterli değildir.",
+      "why": "A evreler arasında kesin dönüşüm varsayar; C büyümenin tamamlandığı sonucunu desteklemeyen bir karşılaştırma yapar.",
       "prompt": "Seri boy ölçümü veya el grafisi hangi kararı değiştirebilir?",
       "notes": "Kaynak hastaya yeni bir Sanders evresi eklemeyin. Ek bilgi ihtiyacını tartıştırın.",
       "refs": [
         "maturity"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q2"
     },
     {
       "section": 0,
-      "title": "Başlangıçtaki yaklaşımı nasıl gerekçelendirirsiniz?",
+      "title": "30° eğrilik ve devam eden büyümede hangi tedavi yaklaşımı değerlendirilir?",
       "info": "Kaynak bu hastayı esnek eğrilik ve yeterli kalan büyüme ile korseye uygun örnek olarak sunuyor.",
       "options": [
-        "Yalnız 30° sayısından korse markası ve günlük kullanım reçetesini kesin seçerim.",
-        "Menarş olmadığı için tüm tedavi kararlarını ertelemeyi öneririm.",
-        "Korse değerlendirmesini büyüme ve eğrilikle birlikte ele alır, kişisel planı tamamlarım."
+        "Kalan büyümeye bakmadan yalnız egzersiz planlarım.",
+        "Korseyi ancak eğrilik 45° üzerine çıkarsa değerlendiririm.",
+        "Korse tedavisini değerlendirir; patern, büyüme, uyum ve hasta hedefleriyle kişisel planı tamamlarım."
       ],
       "correct": 2,
-      "reason": "SRS, büyümesi süren uygun eğriliklerde korse yaklaşımını destekler. Yerleşim ve kişisel değerlendirme, korse seçimini etkiler.",
-      "why": "A değerlendirmeyi reçeteyle eşitler; B kalan büyümeyi erteleme gerekçesi yapar.",
+      "reason": "SRS, büyümesi süren hastalarda 25° üzeri ve yaklaşık 45°–50° altı uygun eğriliklerde korseyi ele alır. Bu olgu korse değerlendirmesini destekler; korse tipi ve kullanım planı tam klinik değerlendirme gerektirir.",
+      "why": "A korse seçeneğini gerekçesiz dışlar; B değerlendirmeyi uygun konservatif aralığın sonuna erteler.",
       "prompt": "Bu hastada hangi eksik bilgiler korse planını etkileyebilir?",
       "notes": "Belirli marka veya herkes için tek doz istemeyin; klinik değerlendirmeyi gerekçelendirmeye odaklanın.",
       "refs": [
         "brace"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q3"
     },
     {
       "section": 0,
-      "title": "Bir başarılı hasta, tedavinin kanıtını nasıl etkiler?",
-      "info": "Elimizde yayınlanmış bir hasta serisi var; sonuçları henüz açılmadı.",
+      "title": "Korse tedavisinin temel hedefini hastaya nasıl anlatırsınız?",
+      "info": "Bu soruda tek hastanın iyi sonucu ile karşılaştırmalı tedavi kanıtını ayırıyoruz.",
       "options": [
-        "Bu hasta iyi giderse korse her benzer hastada başarı garantisi sağlar.",
-        "Tek örnek öğreticidir; etkinlik için karşılaştırmalı kanıtı da değerlendiririm.",
-        "Tek hasta örneği hiçbir eğitim değeri taşımaz."
+        "Hedef, grafideki eğriliği kalıcı olarak sıfırlamaktır.",
+        "Hedef, büyüme sırasında ilerlemeyi sınırlamak ve cerrahi aralığa ulaşma riskini azaltmaktır.",
+        "İlk korse içi grafi iyi ise takip gerekmeyecektir."
       ],
       "correct": 1,
-      "reason": "BrAIST korseyi gözlemle karşılaştırdı; temel başarı ölçütü iskelet olgunluğuna 50°’ye ulaşmadan varmaktı. Tek örnek, bu karşılaştırmalı kanıtın yerine geçmez.",
-      "why": "A bireysel sonucu geneller; C görüntü üzerinden akıl yürütmenin değerini siler.",
+      "reason": "BrAIST, uygun risk grubunda korse tedavisiyle 50° eşiğine ilerlemenin azaldığını gösterdi. Tek hastanın iyi sonucu, her hastada aynı yanıtın alınacağını kanıtlamaz.",
+      "why": "A düz omurga garantisi verir; C büyüme dönemindeki izlem ihtiyacını ortadan kaldırır.",
       "prompt": "Klinik hedef ile araştırmanın sonlanımı aynı şey mi?",
-      "notes": "BrAIST popülasyon koşullarını herkes için zorunlu reçete şartına çevirmeyin.",
+      "notes": "Bu olgu tek bir yayınlanmış klinik örnektir; hasta serisi değildir. BrAIST’in çalışma sonlanımı ile bireysel tedavi hedefini ayırın.",
       "refs": [
         "braist"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q4"
     },
     {
       "section": 0,
-      "title": "PSSE’yi bu planda nasıl konumlandırırsınız?",
+      "title": "Skolyoza özgü egzersizleri tedaviye nasıl dahil edersiniz?",
       "info": "Bu gerçek hastanın PSSE uygulayıp uygulamadığı kaynak şekil açıklamasında yok.",
       "options": [
-        "PSSE’yi tamamlayıcı seçenek olarak değerlendiririm; kaynak hastada yapıldığını iddia etmem.",
-        "İyi korse içi düzeltme elde edilirse bu hastanın mutlaka PSSE yaptığı sonucuna varırım.",
-        "PSSE kanıtı bütün uygun hastalarda korseyi gereksiz kılar."
+        "PSSE’yi değerlendirilmiş konservatif plana ekleyebilir, korse gereksinimini ayrıca ele alırım.",
+        "PSSE başlanırsa korse endikasyonunu yeniden değerlendirmeye gerek kalmaz.",
+        "Korse içi düzeltme oranından hastanın egzersiz yapıp yapmadığını çıkarırım."
       ],
       "correct": 0,
-      "reason": "Schroth PSSE’nin standart bakıma eklendiği randomize çalışma yarar bildirdi. Bu, her uygun hastada korse yerine yalnız egzersiz seçilmesini kanıtlamaz.",
-      "why": "B kaynakta olmayan tedaviyi atar; C çalışmanın kapsamını aşar.",
+      "reason": "PSSE, skolyoza özgü fizyoterapötik egzersizleri ifade eder. Schroth egzersizlerinin standart bakıma eklendiği randomize çalışma yarar bildirdi; bu sonuç uygun hastada korseyi otomatik olarak kaldırmaz.",
+      "why": "B egzersizi tüm hastalarda korse yerine geçirir; C görüntüden belgelenmemiş tedavi ayrıntısı çıkarır.",
       "prompt": "Genel egzersiz ile skolyoza özgü egzersiz önerisini nasıl ayırırsınız?",
       "notes": "Ek egzersiz kararı eğitim tartışmasıdır; bu hastanın yayınlanmış tedavi ayrıntısı olarak sunulmaz.",
       "refs": [
         "psse"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q5"
     },
     {
       "section": 1,
-      "title": "İlk korse içi görüntü neyi gösterir?",
+      "title": "İlk korse içi düzeltme kalıcı sonuç anlamına gelir mi?",
       "info": "Aynı hastanın B paneli açılıyor. Kaynak yaklaşık %64 korse içi düzeltme bildiriyor.",
       "options": [
-        "Korsenin o çekimdeki etkisini gösterir; uzun dönem sonucu tek başına kanıtlamaz.",
-        "Büyüme bitmiş ve tedavi tamamlanmıştır.",
-        "Başlangıç ve korse içi görüntü farklı hastalara aittir."
+        "Korsenin o çekimdeki düzeltici etkisidir; kalıcı sonucu korse dışı takiplerle değerlendiririm.",
+        "Korse içi 11° değerini tedavi sonu ayakta açı olarak kaydederim.",
+        "Bu yanıta dayanarak kalan büyüme süresinde korseyi bırakırım."
       ],
       "correct": 0,
-      "reason": "Anlık korse içi düzeltme ile tedavi sonundaki korse dışı sonuç ayrı değerlendirmelerdir. Yayınlanmış takip çalışması bu ayrımın önemini gösterir.",
-      "why": "B büyüme ve sonuç hakkında veri dışı yargı verir; C kaynak eşleşmesini yanlış kurar.",
+      "reason": "Korse içi grafi ile korse dışı ayakta grafi farklı soruları yanıtlar. İlki anlık düzeltmeyi, uygun koşullarda seri korse dışı grafiler ise eğriliğin gidişini değerlendirmeye yardımcı olur.",
+      "why": "B çekim koşullarını eşitler; C tek korse içi grafiden bırakma kararı çıkarır.",
       "prompt": "Başlangıç 30° ile B panelindeki işaretler neden doğrudan kalıcı düzeltme değildir?",
       "notes": "Kaynak %64 bildiriyor; küçük görüntü üzerinden yeniden hassas yüzde ölçtüğümüzü söylemeyin.",
       "refs": [
         "B"
       ],
-      "image": 1
+      "image": 1,
+      "id": "rev2-q6"
     },
     {
       "section": 1,
-      "title": "Birinci yıl kontrolünde hangi karşılaştırmayı yaparsınız?",
+      "title": "Birinci yıldaki iki görüntüyü nasıl karşılaştırırsınız?",
       "info": "C: bir yıl sonraki kontrol. D: aynı dönemde yeni korse içindeki görünüm. C’nin çekim koşulu şekil açıklamasında ayrıntılı belirtilmiyor.",
       "options": [
-        "Bütün panelleri korse dışıymış gibi aynı seri kabul ederim.",
-        "Çekim ve korse koşullarını ayrı kaydeder; C’nin belirsiz koşulunu tamamlamadan kesin karşılaştırma yapmam.",
-        "Yeni korse yapılması tek başına ilk tedavinin başarısız olduğunu gösterir."
+        "C ve D’yi aynı koşullarda çekilmiş iki kontrol grafisi kabul ederim.",
+        "C’nin çekim koşulunu netleştirir; D’yi yeni korse içindeki düzeltme olarak ayrı değerlendiririm.",
+        "D’de açı azaldığı için korse dışındaki eğriliğin de aynı miktarda azaldığını söylerim."
       ],
       "correct": 1,
-      "reason": "Görüntülerin çekim koşulları yorumun parçasıdır. Korse içi ve korse dışı açılar aynı soruyu yanıtlamaz.",
-      "why": "A koşulları eşitler; C revizyonu tek başına başarısızlık sayar.",
+      "reason": "Kaynak C’de birinci yıl iyileşmeyi, D’de yeni korse içi görüntüyü bildiriyor. C’nin çekim koşulu açıklamada net değildir; bu nedenle iki sayıyı aynı seriymiş gibi yorumlamayız.",
+      "why": "A çekim koşulunu varsayar; C korse içi etkiyi kalıcı korse dışı sonuçla karıştırır.",
       "prompt": "Büyüyen hastada korse uyumu için hangi bilgiler gerekir?",
       "notes": "Kaynak yeni korse bildiriyor; yapılış nedenini veya günlük kullanım süresini ayrıca vermiyor. Bunları uydurmayın.",
       "refs": [
         "B",
         "compliance"
       ],
-      "image": 3
+      "image": 3,
+      "id": "rev2-q7"
     },
     {
       "section": 1,
-      "title": "İki yıl sonra bırakma kararı nasıl tartışılır?",
+      "title": "Korseyi bırakmaya hazır oluş ile bırakma yöntemi nasıl ayrılır?",
       "info": "E paneli: kaynak iki yıl sonra korse bırakmaya başlandığını bildiriyor. Bırakma anının Sanders ve Risser evreleri bu örnekte verilmemiş.",
       "options": [
-        "İki yıl geçtiği için bütün hastalar bırakmalıdır.",
-        "Başlangıç Risser 0 ise bırakma anında da Risser 0’dır.",
-        "Kaynak olayını kaydeder; bireysel matürite ve eğriliğe göre bırakma değerlendirmesini ayrı yaparım."
+        "Tedavi süresi iki yıl olunca tüm hastalarda bırakmaya başlarım.",
+        "Kademeli bırakmanın yapılabilmesi için iskelet olgunluğunu incelemem gerekmez.",
+        "Önce büyüme ve eğriliği değerlendiririm; bırakma yöntemini bu değerlendirmeden sonra seçerim."
       ],
       "correct": 2,
-      "reason": "2024 randomize çalışmada uygun matüriteye ulaşmış hastalarda kademeli bırakmanın hemen bırakmaya üstünlüğü gösterilmedi. Bu sonuç, matürite değerlendirmesini gereksiz kılmaz.",
-      "why": "A zamanı tek ölçüt yapar; B matüriteyi değişmez sayar.",
+      "reason": "2024 randomize çalışmada bırakmaya uygun olgunluğa ulaşmış hastalarda hemen bırakma ile ek altı ay gece kullanımı karşılaştırıldı; 24 aya kadar belirgin üstünlük gösterilmedi. Bu, büyüme değerlendirmesinin gereksiz olduğu anlamına gelmez.",
+      "why": "A süreyi tek ölçüt yapar; B bırakmaya hazır oluş ile yöntemi birbirine karıştırır.",
       "prompt": "Bırakma zamanı ile bırakma yöntemi hangi iki farklı sorudur?",
       "notes": "Kaynağın tarihsel uygulaması bugünkü herkese uygulanacak protokol olarak sunulmaz.",
       "refs": [
         "wean"
       ],
-      "image": 4
+      "image": 4,
+      "id": "rev2-q8"
     },
     {
       "section": 1,
-      "title": "Bir yıl sonraki sonucu nasıl anlatırsınız?",
+      "title": "Tedavi sonrasındaki kontrolü nasıl özetlersiniz?",
       "info": "F: bırakmadan bir yıl sonraki kontrol. Kaynak korse dönemi boyunca 12 cm büyüme ve olumlu sonuç bildiriyor.",
       "options": [
-        "Kaynak sonucu olumlu; yine de görünüm, işlev ve hasta deneyimi gibi sonuçları ayrı değerlendiririm.",
-        "Bu tek grafi yaşam boyu ilerleme olmayacağını kanıtlar.",
-        "İyi sonuç varsa hasta kullanım güçlüğü hiç yaşamamıştır."
+        "Kaynakta olumlu radyografik sonuç vardır; ileri takip ve hastanın işlev/yaşam kalitesi değerlendirmesi ayrı konulardır.",
+        "Olumlu grafi nedeniyle gelecekteki ilerleme riskini sıfır kabul ederim.",
+        "Olumlu grafiyi hastanın tüm tedavi boyunca tam uyum gösterdiğinin kanıtı sayarım."
       ],
       "correct": 0,
-      "reason": "Olumlu radyografik sonuç ile hastanın kullanım deneyimi farklı veriler olabilir. Kullanım verisine dayalı danışmanlık çalışması, bu sürecin ayrıca ele alınabileceğini gösterir.",
-      "why": "B süreyi aşan garanti verir; C kaydedilmemiş deneyimi varsayar.",
+      "reason": "Kontrol grafisi o zamanki radyografik sonucu gösterir. İşlev, yaşam kalitesi ve gerçek korse kullanımı için ayrı veriler gerekir; bunlar bu olguda bildirilmemiştir.",
+      "why": "B kaynak süresinin ötesine garanti verir; C sonucu kullanım ölçümü yerine koyar.",
       "prompt": "Hastanın sonucu hakkında hangi bilgiler hâlâ eksik?",
       "notes": "Kullanım saatleri ve yaşam kalitesi ölçümleri bu kaynak örnekte verilmedi. İleride edinilecek klinik veriler ile yayınlanmış olayı ayırın.",
       "refs": [
         "compliance"
       ],
-      "image": 5
+      "image": 5,
+      "id": "rev2-q9"
     },
     {
       "section": 2,
-      "title": "İkinci hastada başlangıç verisini nasıl kaydedersiniz?",
+      "title": "35° başlangıç grafisiyle hangi karşılaştırma daha anlamlıdır?",
       "info": "Farklı kaynak hasta: ana eğrilik T5-T12, korse öncesi ayakta Cobb 35°.",
       "options": [
-        "35°’yi ve çekim koşulunu kaydeder; bireysel matürite verisinin eksik olduğunu belirtirim.",
-        "Önceki hastanın Risser 0 ve yaş 12 bilgisini buraya taşırım.",
-        "Araştırmanın ortalama yaşını bu hastanın yaşı olarak yazarım."
+        "Aynı eğriliğin, benzer koşullarda çekilmiş sonraki korse dışı ayakta grafisi.",
+        "Korse içi grafi; çekim koşulunu ayrıca belirtmeden doğrudan kıyaslarım.",
+        "Önceki hastanın tedavi sonu grafisi; açıları benzer olduğu için kıyaslarım."
       ],
       "correct": 0,
-      "reason": "Hastaya ait veri ile çalışma kohortunun özelliği farklıdır. Şekil açıklamasında olmayan bireysel değerler atanmaz.",
-      "why": "B ve C kaynak hastayı başka verilerle birleştirir.",
+      "reason": "Korse dışı eğriliğin gidişini değerlendirmek için korse dışı ayakta grafiler esas karşılaştırmadır. Korse içi grafiler ayrı bir düzeltme değerlendirmesidir.",
+      "why": "B farklı koşulları eşitler; C farklı hastaları aynı takip serisi yapar.",
       "prompt": "Bu eksiklik klinik kararın hangi kısmını sınırlar?",
       "notes": "Tanı kartı tam hasta dosyası değildir; görsel kaynak örneğiyle sınırlıdır.",
       "refs": [
         "B"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q10"
     },
     {
       "section": 2,
-      "title": "İlk korse içi yanıtı nasıl hesaplayıp yorumlarsınız?",
+      "title": "35° → 29° korse içi düzeltme oranı kaçtır?",
       "info": "B paneli açılıyor: başlangıç 35°, ilk korse içi 29°.",
       "options": [
-        "Yaklaşık %17 korse içi düzeltme; bu anlık yanıtı uzun dönem sonuçtan ayırırım.",
-        "6° azalma olduğu için %6 düzeltme vardır.",
-        "Herhangi bir azalma cerrahi riskinin sıfırlandığını gösterir."
+        "Yaklaşık %17; (35−29)/35 × 100.",
+        "%6; açı farkını doğrudan yüzde kabul ederim.",
+        "Yaklaşık %83; 29/35 × 100 düzeltme oranıdır."
       ],
       "correct": 0,
-      "reason": "Verilen sayılardan (35−29)/35 × 100 ≈ %17 hesaplanır. Bu matematiksel oran, tek başına tedavinin nihai başarısı değildir.",
-      "why": "B derece ile yüzdeyi karıştırır; C garanti verir.",
+      "reason": "Düzeltme oranı, başlangıç açısına göre azalmayı ifade eder: (35−29)/35 × 100 ≈ %17. Kalan açı oranı veya derece farkı ile aynı değildir.",
+      "why": "B dereceyi yüzdeyle, C kalan açı oranını düzeltme oranıyla karıştırır.",
       "prompt": "Bu hastaya özel yeterlilik için hangi bilgiler gerekir?",
       "notes": "Günlük gerçek kullanım, uyum, esneklik ve matürite verileri sağlanmadan yalnız yüzdeden kesin neden veya son reçete çıkarmayın.",
       "refs": [
         "B"
       ],
-      "image": 1
+      "image": 1,
+      "id": "rev2-q11"
     },
     {
       "section": 2,
-      "title": "Sonraki korse içi görüntü neyi değiştirir?",
+      "title": "Takipte korse içi açının 29°’den 44°’ye çıkması ne gerektirir?",
       "info": "C paneli: sonraki korse içi Cobb 44° olarak bildirilmiş.",
       "options": [
-        "35° korse dışı ile 44° korse içini koşullarını belirtmeden tek seri yaparım.",
-        "29° ve 44° korse içi bulguları dikkate alır; ölçüm, korse ve kullanım değerlendirmesini yenilerim.",
-        "Artışın kesin nedeni hastanın korsesini takmamasıdır."
+        "Sonuç iyi değildir; başka veri toplamadan nedenini düşük kullanım kabul ederim.",
+        "Ölçümü ve çekim koşullarını kontrol eder; büyüme, korsenin oturuşu ve kullanım verileriyle planı yeniden değerlendiririm.",
+        "Başlangıçta korse verilmiş olduğundan aynı planı değişiklik yapmadan sürdürürüm."
       ],
       "correct": 1,
-      "reason": "Kaynak korse içi artış örneği bildiriyor. Görsel tek başına kullanım saatini veya artışın nedenini belirlemez.",
-      "why": "A koşulları atlar; C kaynağa nedensellik ekler.",
+      "reason": "Korse içinde bildirilen artış yeniden değerlendirme gerektirir. Şekil, nedenin kullanım yetersizliği mi, korse uyumu mu veya başka etkenler mi olduğunu tek başına göstermez.",
+      "why": "A kanıtlanmamış bir neden atar; C belgelenen artışı plana yansıtmaz.",
       "prompt": "Hangi veri kullanım sorunu ile korse uyumunu ayırmanıza yardımcı olur?",
       "notes": "Kaynakta bulunmayan sensör çizelgesi, süre veya uyumsuzluk öyküsü üretmeyin.",
       "refs": [
         "B",
         "compliance"
       ],
-      "image": 2
+      "image": 2,
+      "id": "rev2-q12"
     },
     {
       "section": 2,
-      "title": "Cerrahi görüşü bu aşamada nasıl çerçevelersiniz?",
+      "title": "Bu grafi tek başına cerrahi kararı için yeterli mi?",
       "info": "Artış gösteren korse içi 44° var. Güncel korse dışı grafi ve bireysel matürite henüz verilmemiş.",
       "options": [
-        "44° olduğu için otomatik ameliyat kararı veririm.",
-        "45° altında olduğu için tüm değerlendirmeyi ertelerim.",
-        "Omurga ekibi değerlendirmesini tartışır; korse dışı büyüklük, matürite, gidiş ve hasta hedefleriyle planı tamamlarım."
+        "Korse içi 44° değeriyle doğrudan ameliyat planlarım.",
+        "45° altında olduğundan omurga değerlendirmesini erteleyebilirim.",
+        "Omurga ekibi görüşünü değerlendirir; güncel korse dışı açı, büyüme, ilerleme ve hasta hedefleriyle kararı tamamlarım."
       ],
       "correct": 2,
-      "reason": "SRS cerrahiyi genellikle 45°–50° üzeri eğrilikler ve ilerleme riski bağlamında ele alır. Görüş istemek ile ameliyat kararı aynı değildir.",
-      "why": "A eksik dosyayı tek sayıyla kapatır; B ilerleyen tabloyu görmezden gelir.",
+      "reason": "Cerrahi görüş istemek ile ameliyat endikasyonu aynı değildir. SRS, büyüme ve ilerleme bağlamında büyük eğriliklerde cerrahiyi ele alır; korse içi tek açıdan otomatik karar çıkarılmaz.",
+      "why": "A eksik dosyayı tek sayıyla kapatır; B ilerleyen olgunun değerlendirmesini gerekçesiz erteler.",
       "prompt": "Hastaya sevk gerekçesini nasıl söylersiniz?",
       "notes": "Bu kaynak hastanın cerrahiye gidip gitmediği şekil açıklamasında yok. Önerilen değerlendirme, eğitimdeki klinik akıl yürütmedir.",
       "refs": [
         "surgery"
       ],
-      "image": 2
+      "image": 2,
+      "id": "rev2-q13"
     },
     {
       "section": 3,
-      "title": "Üçüncü hastada ilk varsayımı nasıl kurarsınız?",
-      "info": "Gerçek kaynak hasta: 13 yaş kız; bir yıldır deformite. Kaynak T1-T6 için 35°, T7-L3 için 100° bildiriyor.",
+      "title": "Bu paternle etiyolojik değerlendirmeyi nasıl sürdürürsünüz?",
+      "info": "13 yaşında kız; sol torakal ve sağ lomber eğrilik. Kaynak T1–T6 için 35°, T7–L3 için 100° bildiriyor.",
       "options": [
-        "Yaş ve skolyoz görünümü nedeniyle nedeni kesin idiyopatik kabul ederim.",
-        "Büyük eğriliği ve paterni değerlendirir; ayrıntılı nörolojik muayene ile neden araştırmasını sürdürürüm.",
-        "Önceki hastanın korse süresini bu hastaya uygularım."
+        "Yaş adolesan aralıkta olduğu için tanıyı idiyopatik kabul ederim.",
+        "Atipik patern ve büyük eğriliğe yönelik öykü ile ayrıntılı nörolojik muayeneyi tamamlarım.",
+        "Nedeni belirlemek için yalnız Cobb açısını tekrar ölçerim."
       ],
       "correct": 1,
-      "reason": "İlk görünüm, etiyolojik değerlendirmeyi tamamlamaz. Yüksek riskli çocuklarda nöroaksiyel değerlendirme seçici görüntülemeyle desteklenebilir.",
-      "why": "A tanıyı erken kapatır; C farklı hastaları birleştirir.",
+      "reason": "Yaş ve radyografi tek başına idiyopatik tanıyı tamamlamaz. Atipik patern, öykü ve muayene bulguları nöroaksiyel inceleme gereksinimini etkileyebilir.",
+      "why": "A etiyolojik değerlendirmeyi erken kapatır; C nörolojik değerlendirmeyi açı ölçümüne indirger.",
       "prompt": "Radyografide görülmeyen hangi muayene verileri önemlidir?",
-      "notes": "MRG sonucu sonraki aşamada açılır. İlk kararı sonuç bilgisi olmadan tartışın.",
+      "notes": "Tam şekil MRG ve ameliyat sonrası görüntüleri de içerir. Soru kökündeki bilgi üzerinden, bu sonuçları henüz bilinmiyormuş gibi varsayımsal akıl yürütme yapılabilir.",
       "refs": [
         "acr"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q14"
     },
     {
       "section": 3,
-      "title": "Yeni nörolojik bulgular önceliği nasıl değiştirir?",
-      "info": "Kaynak anormal abdominal refleks, parestezi ve ayak bileği klonusu bildiriyor.",
+      "title": "Anormal refleks, parestezi ve klonus varken hangi inceleme öne çıkar?",
+      "info": "Bu hastanın kaynak muayenesinde anormal yüzeyel karın refleksi, parestezi ve ayak bileği klonusu bildirilmiş.",
       "options": [
-        "Etiyolojik ve nöroaksiyel incelemeyi önceliklendiririm.",
-        "Bulguları eğriliğin büyüklüğüne bağlayıp incelemeden geçerim.",
-        "Yalnız Risser evresini yeniden hesaplamak yeterlidir."
+        "Kontrastsız tüm omurga MRG’si ve uygun uzman değerlendirmesi.",
+        "Nörolojik bulguları eğriliğe bağlayarak rutin takip grafisiyle yetinme.",
+        "Yalnız Risser evresini yeniden belirleme."
       ],
       "correct": 0,
-      "reason": "Bu bulgular idiyopatik varsayımını yeniden değerlendirmeyi gerektirir. ACR, risk faktörleri olan adolesanlarda MRG’nin seçici kullanımını destekler.",
-      "why": "B nörolojik bulguları açıklanmadan normalleştirir; C sorunun kapsamını daraltır.",
+      "reason": "ACR, risk faktörleri olan adolesan skolyozda kontrastsız tüm omurga MRG’sini genellikle uygun bulur. Bu hastanın nörolojik bulguları idiyopatik varsayımını sorgulamayı gerektirir.",
+      "why": "B açıklanmamış nörolojik bulguları atlar; C nöroaksiyel soruyu yanıtlamaz.",
       "prompt": "Muayene bulgusu ile bir MRG tanısı arasında nasıl bir ayrım var?",
       "notes": "Anormal refleks, tek başına belirli bir patolojinin kesin tanısı değildir.",
       "refs": [
-        "acr"
+        "acr",
+        "C"
       ],
-      "image": 0
+      "image": 0,
+      "id": "rev2-q15"
     },
     {
       "section": 3,
-      "title": "MRG bilgisi tanı çerçevesini nasıl değiştirir?",
+      "title": "Chiari malformasyonu ve siringomiyeli saptanınca plan nasıl değişir?",
       "info": "Gerçek kaynak MRG sonucu açılıyor: Chiari malformasyonu ve siringomiyeli.",
       "options": [
-        "Bu bulguları rutin idiyopatik olguya ek bir görüntü ayrıntısı sayarım.",
-        "Tek başıma cerrahi tekniği ve zamanını kesin belirlerim.",
-        "Nöroaksiyel patolojiyi plana dahil eder; omurga ve nöroşirürji ekipleriyle değerlendirmeyi koordine ederim."
+        "Skolyoz planını bu bulgulardan bağımsız yürütürüm.",
+        "MRG görüntüsünden cerrahi sırayı ve zamanlamayı tek başıma belirlerim.",
+        "Nöroşirürji ve omurga ekibiyle, klinik ve MRG bulgularını birlikte değerlendiririm."
       ],
       "correct": 2,
-      "reason": "Bulgular klinik değerlendirme kapsamını değiştirir. Kişiye özgü cerrahi sıra ve zaman için ekip değerlendirmesi gerekir.",
-      "why": "A yeni tanıyı etkisiz sayar; B eldeki dosyanın ve eğitim rolünün sınırını aşar.",
+      "reason": "Nöroaksiyel patoloji tedavi planının parçasıdır. Müdahale gereksinimi, sıra ve zamanlama kişiye özgü ekip değerlendirmesi gerektirir.",
+      "why": "A nöroaksiyel patolojiyi göz ardı eder; B tüm klinik bilgileri değerlendirmeden yöntem ve zaman belirler.",
       "prompt": "Hastanın hangi yeni tanı bilgileri tedavi konuşmasını değiştiriyor?",
       "notes": "Görüntü doğrudan kaynak hastaya aittir. Başka hastanın MRG’siyle eşleştirme yapılmadı.",
       "refs": [
         "C"
       ],
-      "image": 1
+      "image": 1,
+      "id": "rev2-q16"
     },
     {
       "section": 3,
-      "title": "Yayınlanmış tedavi sırasını nasıl yorumlarsınız?",
+      "title": "Bu hastanın yayınlanmış tedavi sırası nasıl yorumlanmalı?",
       "info": "Kaynak bu hastada önce posterior fossa dekompresyonu, ardından T4-L4 skolyoz cerrahisi bildiriyor.",
       "options": [
-        "Bütün Chiari ve skolyoz hastaları için aynı sıra ve süre zorunludur.",
-        "Bu hastanın gerçek tedavi sırasını öğrenirim; tüm hastalara değişmez protokol olarak genellemem.",
-        "İlk girişim sonrası mutlaka bütün eğrilik tamamen kaybolmalıdır."
+        "Bu sıra bütün Chiari-skolyoz hastaları için zorunlu protokoldür.",
+        "Bu olgunun yönetimidir; başka hastaların planı bireysel nörolojik ve omurga değerlendirmesi gerektirir.",
+        "Dekompresyon sonrası skolyoz ameliyatına hiçbir hastada ihtiyaç kalmaz."
       ],
       "correct": 1,
-      "reason": "Bu, kaynak hastanın bildirilen yönetimidir. Bir örneğin sırası veya sonucu bütün hastaların aynı yönetimi gerektirdiğini göstermez.",
-      "why": "A örneği zorunlu kurala çevirir; C kaynakta olmayan sonuç garantisi verir.",
+      "reason": "Kaynak bu hastada önce posterior fossa dekompresyonu, ardından T4–L4 omurga cerrahisi bildirir. Tek olgunun yönetim sırası evrensel tedavi kuralı değildir.",
+      "why": "A tek olguyu tüm hastalara geneller; C omurga cerrahisi gereksinimini mutlak biçimde dışlar.",
       "prompt": "A, B ve C hastalarında kararın temelini değiştiren farklar nelerdir?",
       "notes": "Son bölümde üç hastayı karşılaştırın: büyüme ve konservatif plan; korse sırasında artış; nöroaksiyel patoloji.",
       "refs": [
         "C"
       ],
-      "image": 2
+      "image": 2,
+      "id": "rev2-q17"
+    },
+    {
+      "section": 4,
+      "title": "23° lomber eğrilikte tedavi kararını hangi bilgi güçlendirir?",
+      "info": "Kaynak olguda OMC korse kullanılmış. Çalışma, 20°–24° arası ilerleyen ve iskelet olgunluğu tamamlanmamış hastaları da kabul etmiş.",
+      "options": [
+        "23° olan her hastaya aynı korseyi vermek.",
+        "Seri ölçümlerde ilerleme ve kalan büyümeyi değerlendirmek.",
+        "25° altında bütün konservatif seçenekleri dışlamak."
+      ],
+      "correct": 1,
+      "reason": "Bu örnek, 23° olan her hastaya aynı tedavinin uygulanacağını göstermez. Başlangıç açısı; ilerleme, büyüme ve klinik değerlendirmeyle birlikte ele alınır.",
+      "why": "A kişisel değerlendirmeyi atlar; C tek eşiği mutlak kural yapar.",
+      "prompt": "Hangi ek bilgi gözlem ile korse değerlendirmesi arasındaki kararı değiştirir?",
+      "refs": [
+        "omc",
+        "brace"
+      ],
+      "image": 0,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q18"
+    },
+    {
+      "section": 4,
+      "title": "Esneklik ve korse içi düzeltme oranlarını ayırabilir misiniz?",
+      "info": "Ayakta 23°, asılma pozisyonunda 18°, korse içinde 5° bildirilmiş.",
+      "options": [
+        "İki grafi de tedavi sonu sonucu gösterir.",
+        "18° ile 5° farkı tek başına esneklik oranıdır.",
+        "Asılma düzeltmesi yaklaşık %22, korse içi düzeltme yaklaşık %78’dir."
+      ],
+      "correct": 2,
+      "reason": "(23−18)/23 ≈ %22; (23−5)/23 ≈ %78. Bunlar farklı çekim koşullarının başlangıca göre oranlarıdır; son kontrol sonucu değildir.",
+      "why": "A çekim zamanını/koşulunu eşitler; B yanlış referans değer kullanır.",
+      "prompt": "Asılma, supin ve yan eğilme grafileri neden birbirinin yerine yazılamaz?",
+      "refs": [
+        "omc"
+      ],
+      "image": 1,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q19"
+    },
+    {
+      "section": 4,
+      "title": "Kaynağın “%100 uyum” göstergesi ne anlama geliyor?",
+      "info": "Çalışma hastanın kullanım beyanlarına dayanan kontrol-ziyareti uyum oranını %100 bildirmiş.",
+      "options": [
+        "Gerçek kullanımın sıcaklık sensörüyle günün %100’ünde ölçüldüğünü.",
+        "Araştırmanın tanımladığı ziyaretlerde yeterli kullanım bildirildiğini; objektif kullanım süresi olmadığını.",
+        "Bütün hastalarda aynı sonucun alınacağını."
+      ],
+      "correct": 1,
+      "reason": "Bu çalışmanın uyum ölçütü, kontrol ziyaretlerinde bildirilen kullanımdan türetilmiştir. Günlük zamanın yüzdesi veya sensörle ölçülen gerçek kullanım süresi değildir.",
+      "why": "A yöntemi yanlış çevirir; C bir göstergeyi başarı garantisine dönüştürür.",
+      "prompt": "Beyan ile objektif kullanım ölçümü nasıl farklı yorumlanır?",
+      "refs": [
+        "omc",
+        "compliance"
+      ],
+      "image": 1,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q20"
+    },
+    {
+      "section": 4,
+      "title": "Korse içi 5° ile son kontrol 7° arasındaki fark nasıl yorumlanır?",
+      "info": "Kaynak 3 yıl 5 aylık korse tedavisi sonrası son kontrolde 7° bildiriyor.",
+      "options": [
+        "Korse içi ve son kontrol farklı koşullardır; 5°→7° farkı tek başına ilerleme kanıtı değildir.",
+        "2° farkı doğrudan tedavi başarısızlığı sayarım.",
+        "Korse içi 5° değerini ömür boyu sonuç olarak kaydederim."
+      ],
+      "correct": 0,
+      "reason": "Sonucu başlangıç ve benzer çekim koşullarıyla değerlendirmek gerekir. Anlık korse içi en küçük açı, son kontrol için değişmez referans değildir.",
+      "why": "B farklı koşulları ve ölçüm belirsizliğini atlar; C süreyi aşan sonuç çıkarır.",
+      "prompt": "Hastanın radyografik sonucu ile işlevsel sonucu hangi verilerle ayrılır?",
+      "refs": [
+        "omc",
+        "cobb"
+      ],
+      "image": 2,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q21"
+    },
+    {
+      "section": 5,
+      "title": "Bu yeni olguda ilk korse içi düzeltme oranı kaçtır?",
+      "info": "A paneli ayakta 35°, B paneli korse içinde 24°. Ana eğrilik T7–L3.",
+      "options": [
+        "Yaklaşık %11.",
+        "Yaklaşık %69.",
+        "Yaklaşık %31."
+      ],
+      "correct": 2,
+      "reason": "(35−24)/35 × 100 ≈ %31. Korse içi yanıt, ilerleyen dönemde korse dışı grafi gereksinimini ortadan kaldırmaz.",
+      "why": "A derece farkını yüzde yapar; B kalan açı oranını düzeltme sayar.",
+      "prompt": "İlk düzeltme oranı hangi soruyu yanıtlar, hangisini yanıtlamaz?",
+      "refs": [
+        "E"
+      ],
+      "image": 0,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q22"
+    },
+    {
+      "section": 5,
+      "title": "Bırakma döneminde korse içinde 22,6° olması yeterli mi?",
+      "info": "C paneli bırakma dönemindeki korse içi grafidir; 22,6° bildirilmiş.",
+      "options": [
+        "Korse dışı gerçek gidiş ve iskelet olgunluğu ayrıca değerlendirilmelidir.",
+        "Bu sayı korse dışı açının da 22,6° olduğunu kanıtlar.",
+        "Bırakma kararını yalnız ilk korse içi düzeltme oranıyla veririm."
+      ],
+      "correct": 0,
+      "reason": "Korse içinde kontrol sağlanması, korse dışında ilerleme olmadığı anlamına gelmez. Bırakma değerlendirmesi için büyüme ve uygun korse dışı izlem bilgisi gerekir.",
+      "why": "B çekim koşulunu değiştirir; C büyüme ve izlem verilerini dışlar.",
+      "prompt": "Tek tip takip grafisi hangi ilerlemeyi gözden kaçırabilir?",
+      "refs": [
+        "E",
+        "wean"
+      ],
+      "image": 1,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q23"
+    },
+    {
+      "section": 5,
+      "title": "Son korse dışı açıyı hangi başlangıçla karşılaştırırsınız?",
+      "info": "D paneli tedavi sonrasında ayakta, korse dışında 42,5° bildiriyor.",
+      "options": [
+        "22,6° korse içi değerle farkı hastalığın ilerlemesi sayarım.",
+        "35° korse dışı başlangıçla karşılaştırırım; fark 7,5°’dir, seri koşulları da kontrol ederim.",
+        "24° ilk korse içi değeri yeni korse dışı başlangıç kabul ederim."
+      ],
+      "correct": 1,
+      "reason": "Karşılaştırılabilir korse dışı değerler 35° ve 42,5°’dir. Çalışmada bu olgu korse dışı artış örneği olarak sunulur; 22,6°→42,5° farkının tamamı aynı koşullarda ilerleme değildir.",
+      "why": "A ve C korse etkisini doğal eğrilik değişimiyle karıştırır.",
+      "prompt": "Yeni ölçümde uç omurlar farklı seçilmişse neyi tekrar kontrol edersiniz?",
+      "refs": [
+        "E",
+        "cobb"
+      ],
+      "image": 2,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q24"
+    },
+    {
+      "section": 5,
+      "title": "Korse içi ve dışı grafileri takipte nasıl kullanırsınız?",
+      "info": "Kaynak araştırmanın amacı yalnız korse içi grafilerle gözden kaçabilen artışı incelemektir.",
+      "options": [
+        "Her kontrolde iki grafiyi rutin olarak birlikte isterim.",
+        "Korse içi açı düşük kaldıkça korse dışı grafiyi hiç istemem.",
+        "Klinik soruya göre korse içi uyumu ve uygun koşullu korse dışı gidişi değerlendirir; gereksiz çift çekimden kaçınırım."
+      ],
+      "correct": 2,
+      "reason": "Kaynak, dönüşümlü korse içi/dışı değerlendirmeyi önerir. Korse çıkarıldıktan sonraki süre de kaydedilmelidir; makalenin kullandığı protokol evrensel tek süre kuralı değildir.",
+      "why": "A radyasyon yükünü gerekçesiz artırabilir; B bu olguda görülen ilerlemeyi kaçırabilir.",
+      "prompt": "Bu hastanın yeni değerlendirmesinde hangi bilgileri tamamlarsınız?",
+      "refs": [
+        "E",
+        "B"
+      ],
+      "image": 2,
+      "notes": "Klinik tartışma sorusudur; kaynakta bildirilmemiş bireysel veri eklenmez.",
+      "id": "rev2-q25"
     }
   ],
   "date": "14.10.2026",
-  "minutes": 60
+  "revision": "2026-10-14-r2",
+  "review": "Kaynak kontrolü yapıldı; bağımsız uzman onayı alınmış değildir."
 }

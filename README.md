@@ -22,10 +22,10 @@ Bu paket, mevcut siteden bağımsız çalışabilen bir Node.js servisi ve tamam
 
 Açılış sayfasında anatomi videosu bulunur. “Vakalara geç” bağlantısı `vakalar.html` içindeki soru akışını açar. Video şematik eğitim animasyonudur; kaynak hastaları temsil etmez.
 
-- Üç gerçek kaynak hasta, dört bölüm, 17 karar noktası.
+- Beş gerçek kaynak hasta, altı bölüm, 25 karar noktası.
 - İlk iki bölüm aynı hastanın değerlendirmesi ve takibi.
 - Gerçek radyografiler, MRG ve kaynağın 3D rekonstrüksiyonu.
-- 23 sayfalık eğitmen PDF'si, açıklamalar ve kaynaklar.
+- 22 sayfalık eğitmen PDF'si, açıklamalar ve kaynaklar.
 - Bireysel çalışma ve eğitmen sunumu modları.
 - Ortak kamp şifresi: bütün katılımcılar aynı şifreyi kullanır.
 
@@ -92,7 +92,7 @@ Başka bir backend'e taşınırsa aynı dosya/oturum koruması tüm yollar için
 
 ## Doğrulananlar ve kurulumda kalanlar
 
-Otomatik HTTP testleri Node 24.19.0 üzerinde çalıştırıldı. Eğitim akışındaki 17 karar, bölüm sonuçları ve sunum modu önceki prototipte işlev kontrolünden geçti; PDF sayfaları görsel olarak kontrol edildi. Yeni giriş ekranının gerçek tarayıcı/mobil kontrolü ve mevcut sitenin hosting/proxy uyumu kurulumu yapan geliştirici tarafından doğrulanmalıdır.
+Otomatik HTTP testleri Node 24.19.0 üzerinde çalıştırıldı. Eğitim akışındaki 25 karar, bölüm sonuçları ve sunum modu yenilenen sürümde işlev kontrolünden geçti; PDF sayfaları görsel olarak kontrol edildi. Yeni giriş ekranının gerçek tarayıcı/mobil kontrolü ve mevcut sitenin hosting/proxy uyumu kurulumu yapan geliştirici tarafından doğrulanmalıdır.
 
 Önceki herkese açık demo, bu paketin kurulmasıyla otomatik olarak kapanmaz. Tam kapalı kamp erişimi isteniyorsa eski demo erişimi de ayrıca düzenlenmelidir. PDF'nin içindeki eski demo bağlantısı canlı kurulum adresi bilindiğinde değiştirilmelidir.
 
@@ -111,4 +111,12 @@ Açık turkuaz/lila arka plan, buzlu beyaz cam kartlar, yuvarlak Nunito başlık
 ## GitHub Pages inceleme demosu
 
 `docs/` klasörü şifresiz statik eğitim demosudur. Node sunucusunu ve kamp şifre kontrolünü çalıştırmaz. Canlı sitede şifreli kullanım için kökteki entegrasyon servisi kurulmalıdır.
+
+
+## Kaynak kontrolü ve revizyon / 14 Ekim 2026
+İlk dört bölüm korunur; D (Kuroki Şekil 4) ve E (Kawasaki Şekil 3) ek vakalardır. Radyografiler kırpılmaz; tam şekil, yakınlaştırma ve orijinal dosya erişimi vardır. Tam şekil sonraki sonuçları da gösterebilir. Klinik sorular Türkçe terminolojiyle yeniden yazıldı. Korse içi/dışı ve kullanım beyanı/objektif ölçüm ayrımları düzeltildi. Eski 17 soruluk yerel yanıtlar yeni 25 soru puanına taşınmaz. Bu, kaynak kontrolüdür; bağımsız klinisyen onayı alınmış değildir.
+Kaynak D: https://link.springer.com/article/10.1186/s13013-015-0036-9/figures/4
+Kaynak E: https://journals.sagepub.com/doi/10.1177/21925682211032559 (Şekil 3).
+Otomatik kontroller kaynak akışı, bireysel yanıt ve sunum ayrımı, görüntü açma/yakınlaştırma mantığı ve HTTP erişim kontrollerini kapsar. Gerçek tarayıcıda mobil görsel kontrol tamamlanmamıştır.
+
 
