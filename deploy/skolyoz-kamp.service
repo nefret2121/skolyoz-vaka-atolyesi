@@ -1,0 +1,18 @@
+[Unit]
+Description=Skolyoz Kamp Atolyesi
+After=network.target
+[Service]
+Type=simple
+User=skolyoz
+Group=skolyoz
+WorkingDirectory=/opt/skolyoz-kamp
+EnvironmentFile=/opt/skolyoz-kamp/.env
+ExecStart=/usr/bin/node /opt/skolyoz-kamp/server.mjs
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+[Install]
+WantedBy=multi-user.target

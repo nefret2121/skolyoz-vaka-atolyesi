@@ -1,0 +1,11 @@
+Bu paketi mevcut sitenin /vaka-atolyesi/ bölümüne bağlamanızı istiyoruz.
+
+Katılımcılar telefondan bağlantı veya QR kod ile gelecek. Ortak kamp şifresini biz belirleyeceğiz. Şifreyi public HTML/JavaScript içine yazmayın; paketteki sunucu doğrulamasını veya aynı işlevde kendi backend'inizi kullanın. Görseller, PDF ve JSON dahil tüm içerik oturum kontrolü altında olmalı.
+
+Hazır içerik: üç gerçek kaynak hasta, dört bölüm, 17 karar, eğitmen sunumu ve bireysel çalışma, 23 sayfalık PDF.
+
+Node.js 22+ bağımlılıksız servis ve Nginx/systemd/Docker örnekleri eklendi. Ayrıntılar README.md içinde. Platformunuz Node çalıştırmıyorsa backend uyarlaması gerekir.
+
+Kurulumda: sitenin gerçek HTTPS adresini ayarlayın; bize şifre belirletin; mevcut siteye giriş düğmesi ekleyin; son adrese QR kod oluşturun; telefon ve bilgisayarda girişi test edin. Ortak şifre kişisel üyelik takibi sağlamaz. Canlı ortak oylama bu sürüme dahil değil.
+
+Bu paket henüz mevcut sitenize kurulmadı. Önceki public demo ve PDF'deki eski demo bağlantısını kapalı kamp erişimi planına göre düzenleyin.
