@@ -20,6 +20,8 @@ Bu paket, mevcut siteden bağımsız çalışabilen bir Node.js servisi ve tamam
 
 ## İçerik
 
+Başlangıçta seslendirmeli 13 saniyelik toraks/T7 animasyonu yer alır. Şematik eğitim görselidir; kaynak hastaların görüntüsü değildir. Video kullanıcı tarafından başlatılır.
+
 - Üç gerçek kaynak hasta, dört bölüm, 17 karar noktası.
 - İlk iki bölüm aynı hastanın değerlendirmesi ve takibi.
 - Gerçek radyografiler, MRG ve kaynağın 3D rekonstrüksiyonu.

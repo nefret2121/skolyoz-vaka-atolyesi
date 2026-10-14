@@ -4,12 +4,13 @@ async function start(overrides={}){const server=await createApp({base,origin:'ht
 const login=(url,pw=password,extra={})=>fetch(url+base+'/login',{method:'POST',redirect:'manual',headers:{Origin:'https://kamp.example','Content-Type':'application/x-www-form-urlencoded',...extra},body:new URLSearchParams({password:pw})});
 test('Giriş, korumalı varlıklar, byte range, çıkış ve kaynak sınırı',async()=>{const a=await start();try{
  let r=await fetch(a.url+base+'/');assert.equal(r.status,200);assert((await r.text()).includes('Ortak kamp şifresi'));
- for(const path of ['assets/hasta-a.jpg','assets/egitim-paketi.pdf','assets/design.css','lesson.json']){r=await fetch(a.url+base+'/'+path);assert.equal(r.status,401);assert.equal(r.headers.get('cache-control'),'private, no-store')}
+ for(const path of ['assets/hasta-a.jpg','assets/egitim-paketi.pdf','assets/design.css','assets/anatomi.mp4','lesson.json']){r=await fetch(a.url+base+'/'+path);assert.equal(r.status,401);assert.equal(r.headers.get('cache-control'),'private, no-store')}
  for(const path of ['ui/login.css','ui/nunito.woff','ui/plus-jakarta.woff']){r=await fetch(a.url+base+'/'+path);assert.equal(r.status,200);if(path.endsWith('.woff'))assert.equal(r.headers.get('content-type'),'font/woff')}
  r=await login(a.url,'yanlis');assert.equal(r.status,401);assert.equal(r.headers.get('set-cookie'),null);
  r=await login(a.url,password,{Origin:'https://baska.example'});assert.equal(r.status,403);
  r=await login(a.url);assert.equal(r.status,303);const cookie=r.headers.get('set-cookie');assert(cookie.includes('HttpOnly'));assert(cookie.includes('Secure'));assert(cookie.includes('SameSite=Lax'));const token=cookie.split(';')[0];
  r=await fetch(a.url+base+'/',{headers:{Cookie:token}});assert((await r.text()).includes('Vaka Atölyesi'));assert.equal(r.headers.get('cache-control'),'private, no-store');
+ r=await fetch(a.url+base+'/assets/anatomi.mp4',{headers:{Cookie:token,Range:'bytes=0-31'}});assert.equal(r.status,206);assert.equal(r.headers.get('content-type'),'video/mp4');assert.equal((await r.arrayBuffer()).byteLength,32);
  r=await fetch(a.url+base+'/assets/egitim-paketi.pdf',{headers:{Cookie:token,Range:'bytes=0-4'}});assert.equal(r.status,206);assert.equal(await r.text(),'%PDF-');
  r=await fetch(a.url+base+'/assets/egitim-paketi.pdf',{method:'HEAD',headers:{Cookie:token}});assert.equal(r.status,200);assert(Number(r.headers.get('content-length'))>1000);assert.equal(await r.text(),'');
  r=await fetch(a.url+base+'/assets/hasta-a.jpg',{headers:{Cookie:token,Range:'bytes=999999999-'}});assert.equal(r.status,416);
