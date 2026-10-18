@@ -19,7 +19,7 @@ export function configFromEnv(env=process.env){
   return {base,origin:origin.origin,secure,port,host:env.HOST||'127.0.0.1',passwordHash:env.CAMP_PASSWORD_HASH,secret:Buffer.from(env.SESSION_SECRET,'hex'),enabled:env.CAMP_ENABLED!=='false',trustProxy:env.TRUST_PROXY==='true',publicDir:resolve(dir,'public')};
 }
 function loginPage(base,message=''){
- return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Skolyoz Atölyesi · Kamp girişi</title><link rel="stylesheet" href="${base}/ui/login.css"></head><body><main><p class="eyebrow">Skolyoz Atölyesi / Kamp Erişimi</p><h1>Skolyoz<br>Vaka Atölyesi</h1><p>Kamp şifrenizle eğitime giriş yapın.</p>${message?`<p class="error" role="alert">${escape(message)}</p>`:''}<form method="post" action="${base}/login"><label for="password">Ortak kamp şifresi</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="256" required><button type="submit">Atölyeye gir</button></form><p class="footnote">3 hasta · 4 bölüm · 17 karar</p></main></body></html>`;
+ return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Skolyoz Atölyesi · Kamp girişi</title><link rel="stylesheet" href="${base}/ui/login.css"></head><body><main><p class="eyebrow">Skolyoz Atölyesi / Kamp Erişimi</p><h1>Skolyoz<br>Vaka Atölyesi</h1><p>Kamp şifrenizle eğitime giriş yapın.</p>${message?`<p class="error" role="alert">${escape(message)}</p>`:''}<form method="post" action="${base}/login"><label for="password">Ortak kamp şifresi</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="256" required><button type="submit">Atölyeye gir</button></form><p class="footnote">5 hasta · 6 bölüm · 25 karar</p></main></body></html>`;
 }
 function cookieToken(req){const all=(req.headers.cookie||'').split(';');return all.map(x=>x.trim()).find(x=>x.startsWith('kamp_oturumu='))?.slice(13)}
 export async function createApp(config){
@@ -94,5 +94,6 @@ export async function createApp(config){
  return server;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
+ try{process.loadEnvFile(resolve(dir,'.env'))}catch(error){if(error.code!=='ENOENT')throw error}
  try{const config=configFromEnv();const app=await createApp(config);app.listen(config.port,config.host,()=>console.log(`Kamp atölyesi hazır: ${config.origin}${config.base}/`));for(const sig of ['SIGTERM','SIGINT'])process.on(sig,()=>{app.close();setTimeout(()=>process.exit(0),5000).unref()})}catch(error){console.error(error.message);process.exitCode=1}
 }
